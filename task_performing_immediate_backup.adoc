@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task_performing_immediate_backup.html 
+keywords: netapp, saas backup, salesforce, managing, backups, immediate, backup, policies 
+summary: Vous pouvez utiliser SaaS Backup pour Salesforce pour sauvegarder vos données. 
+---
+= Effectuer une sauvegarde immédiate
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Vous pouvez effectuer une sauvegarde immédiate de votre instance de production ou de sandbox chaque fois que vous jugerez nécessaire à la protection de vos données.
+
+
+NOTE: Pour la version d'essai de SaaS Backup pour Salesforce, il n'est possible d'effectuer que trois sauvegardes immédiates par jour.
+
+.Étapes
+. Dans le volet de navigation de gauche, cliquez sur *Services*.image:services.jpg[""]
+. Cliquez sur *instances de production* ou *instances de test*.image:production_instances.gif[""]
+image:sandbox_instances.gif[""]
+. Sélectionnez l'instance correcte à sauvegarder maintenant.
++
+.. Cliquez sur le nombre ci-dessus *INSTANCES PROTÉGÉES*, si l'instance à sauvegarder est actuellement protégée par une stratégie de sauvegarde.
+.. Cliquez sur le nombre ci-dessus *INSTANCES EN ATTENTE*, si l'état de sauvegarde de l'instance à sauvegarder est en attente,
+.. Cliquez sur le nombre ci-dessus *INSTANCES NON PROTÉGÉES*, si l'instance à sauvegarder est actuellement non protégée par une stratégie de sauvegarde.
+
+
+. Cliquez sur le nom de l'organisation.image:organization.jpg[""]
+. Cliquez sur *Sauvegarder maintenant*. Un message s'affiche indiquant que les organisations sélectionnées sont placées dans la file d'attente de sauvegarde.
+. Cliquez sur *soumettre*.
+

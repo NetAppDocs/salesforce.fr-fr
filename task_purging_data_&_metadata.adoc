@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: task_purging_data_&_metadata.html 
+keywords: netapp, saas backup, salesforce, sandbox, production, instance, purge, purging, purging data, metadata, retention, metadata retention, retain and purge, show purged list 
+summary: Vous pouvez purger les données de Salesforce. 
+---
+= Purge des données et des métadonnées
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Vous pouvez purger les données de Salesforce. La purge de vos données au niveau de l'organisation est gérée dans *Paramètres de compte*.
+
+La conservation et la purge des métadonnées sont automatiquement gérées par SaaS Backup pour Salesforce. Les métadonnées sont conservées pendant 90 jours. Au bout de 90 jours, les métadonnées sont supprimées.
+
+
+
+== Purge des données
+
+Vous avez toujours la possibilité de supprimer les données d'une organisation spécifique telle qu'une organisation Salesforce inutilisée.
+
+Vous pouvez purger les données pour actualiser les instances de production ou sandbox.
+
+Vous pouvez également ajouter une autre instance de production ou de sandbox. Pour ce faire, vous devez purger une instance de production ou de sandbox.
+
+.Étapes
+. Cliquez sur image:icon_gear.gif["icône de vitesse"] puis cliquez sur image:account_settings.gif["paramètres du compte"].
+. Cliquez sur *conserver et purger*.
+. Sous *conserver et purger*, faites défiler vers le bas jusqu'à *purger données*.
+. Sélectionnez *Type de fournisseur* et *Nom du service*.
+. Recherchez ou sélectionnez l'ID d'organisation.
+. Cliquez sur *Enregistrer*. Un message s'affiche pour vous permettre de confirmer ou d'annuler la purge.
+. Cliquez sur *Oui* pour confirmer la purge. Si vous cliquez sur *Oui*, vous pouvez récupérer les données supprimées pendant sept jours maximum.
+. Cliquez sur *Afficher la liste purgée* pour afficher la liste des purges planifiées.
++
+image:purged_list_example.gif["exemple de liste purgée"]
+
+

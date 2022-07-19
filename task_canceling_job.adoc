@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: task_canceling_job.html 
+keywords: netapp, saas backup, salesforce, canceling, jobs, backup, restore 
+summary: Vous pouvez annuler une sauvegarde ou une restauration immédiate. Vous ne pouvez pas annuler une sauvegarde planifiée. 
+---
+= Annulation d'un travail
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Vous pouvez annuler une sauvegarde ou une restauration immédiate. Vous ne pouvez pas annuler une sauvegarde planifiée.
+
+
+toc::[]
+.Étapes
+. Cliquez sur *travaux* dans le volet de navigation de gauche.
+. Sous *travaux en cours d'exécution récents*, recherchez le travail que vous souhaitez annuler.
+. Cliquez sur *Annuler*.
+

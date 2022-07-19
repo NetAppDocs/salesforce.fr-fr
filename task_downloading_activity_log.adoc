@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: task_downloading_activity_log.html 
+keywords: netapp, saas backup, salesforce, viewing, downloading, activity, log 
+summary: Vous pouvez télécharger le journal des activités dans un fichier .csv. 
+---
+= Téléchargement du journal des activités
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Vous pouvez télécharger le journal des activités dans un fichier .csv.
+
+.Étapes
+. Dans le volet de navigation gauche, cliquez sur *Reporting*.image:reporting.jpg[""]
+. Cliquez sur *Journal d'activités*.
+. Cliquez sur *Télécharger*.image:download.jpg[""]Le journal des activités est téléchargé sous la forme d'un fichier .csv.
+

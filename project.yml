@@ -1,0 +1,57 @@
+---
+settings:
+  name: SaaS Backup For Salesforce
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: fr-fr,us-en,ja-jp,zh-cn,zh-tw,ko-kr,de-de
+sidebar:
+  entries:
+  - title: Documentation NetApp SaaS Backup pour Salesforce
+    url: "/index.html"
+  - title: Notes de mise à jour
+    entries:
+    - title: Quoi de neuf
+      url: "/reference_new_salesforce.html"
+    - title: Problèmes et limites connus
+      url: "/concept_kpls.html"
+  - title: Présentation
+    url: "/concept_overview.html"
+  - title: Gestion de SaaS Backup pour Salesforce
+    entries:
+    - title: Politiques de sauvegarde
+      url: "/reference_backup_policies.html"
+    - title: Effectuer une sauvegarde immédiate
+      url: "/task_performing_immediate_backup.html"
+    - title: Activation et désactivation des sauvegardes de métadonnées
+      url: "/task_enable_disable_metadata_backups.html"
+    - title: Restauration des données
+      url: "/task_managing_restores.html"
+    - title: Comparer et restaurer les différences de sauvegarde
+      url: "/task_comparing_restoring.html"
+    - title: Purge des données et des métadonnées
+      url: "/task_purging_data_&_metadata.html"
+    - title: Nouvelle authentification
+      url: "/task_reauthenticating.html"
+    - title: Annulation d'un travail
+      url: "/task_canceling_job.html"
+  - title: Afficher les données
+    entries:
+    - title: Affichage de l'historique des travaux
+      url: "/task_viewing_job_history.html"
+    - title: Affichage du journal des activités
+      url: "/task_viewing_activity_log.html"
+    - title: Téléchargement du journal des activités
+      url: "/task_downloading_activity_log.html"
+    - title: Téléchargement des données d'exportation
+      url: "/task_downloading_export_data.html"
+    - title: Affichage des enregistrements de sauvegarde
+      url: "/task_viewing_backup_records.html"
+  - title: Laisser des commentaires
+    url: "/task_providing_feedback.html"
+  - title: Où obtenir de l'aide et trouver plus d'informations
+    url: "/concept_get_help_find_info.html"
+  - title: Mentions légales
+    url: "/reference_legal_notices.html"

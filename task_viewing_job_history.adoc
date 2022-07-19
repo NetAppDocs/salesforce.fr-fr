@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: task_viewing_job_history.html 
+keywords: netapp, saas backup, salesforce, viewing, job, history 
+summary: Vous pouvez afficher la liste de toutes les tâches terminées, annulées ou ayant échoué dans SaaS Backup pour Salesforce. 
+---
+= Affichage de l'historique des travaux
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Vous pouvez afficher la liste de toutes les tâches terminées, annulées ou ayant échoué dans SaaS Backup pour Salesforce.
+
+.Étapes
+. Dans le volet de navigation gauche, cliquez sur *Reporting*.image:reporting.jpg[""]L'historique des travaux s'affiche.
+. Dans le coin supérieur droit, cliquez sur *Filter*.image:filter.jpg[""]
+. Sélectionnez le filtre à utiliser pour affiner les résultats du reporting. Vous pouvez filtrer par stratégie de sauvegarde, service ou type de travail.
+. Cliquez dans la zone *Rechercher* et sélectionnez la stratégie de sauvegarde, le service ou le type de travail pour lequel vous souhaitez afficher les résultats. Ajoutez des filtres supplémentaires si nécessaire.image:reporting_filter.jpg[""]
+. Cliquez sur *appliquer le filtre*.
+

@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: task_comparing_restoring.html 
+keywords: netapp, saas backup, salesforce, managing, restores, comparing, restoring, recent, previous, backup, compare, comparison 
+summary: Vous pouvez utiliser SaaS Backup pour Salesforce pour comparer et restaurer les données que vous avez déjà sauvegardées. 
+---
+= Comparer et restaurer les différences de sauvegarde
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Vous pouvez utiliser SaaS Backup pour Salesforce pour comparer les différences de sauvegarde et les restaurer.
+
+.Étapes
+. Dans le volet de navigation de gauche, cliquez sur *travaux*.image:jobs.jpg["Bouton tâches"]
+. Sous *travaux terminés récents*, sélectionnez la sauvegarde contenant l'objet pour lequel vous souhaitez comparer les sauvegardes.
+. Cliquez sur l'organisation.
+. Sélectionnez l'objet pour lequel vous souhaitez comparer les sauvegardes.
+. Cliquez sur l'icône de comparaison.image:compare_icon.jpg["Capture d'écran de avec l'icône de comparaison mise en surbrillance"]
+. En regard de *sauvegarde précédente*, sélectionnez la première date de la sauvegarde que vous souhaitez utiliser pour la comparaison.
+. En regard de *Current Backup*, sélectionnez la deuxième date de la sauvegarde que vous souhaitez utiliser pour la comparaison.
+. Cliquez sur *COMPARER*.image:compare.jpg["Bouton de comparaison"]
++
+
+NOTE: S'il n'y a pas de différence entre les deux sauvegardes sélectionnées, le travail de comparaison n'est pas créé.
+
+. Cliquez sur *Afficher la progression des travaux*.
++
+Une fois le travail terminé, il apparaît sous *travaux terminés récents*.
+
+. Cliquez sur le nombre d'organisations ou sur le nombre réussi.image:completed_compare_job_click_arrow.gif["Travail de comparaison terminé où cliquer pour obtenir des résultats"]
++
+Une fenêtre s'affiche, indiquant l'état du travail.image:compare_job_results_window_arrow.gif["fenêtre de résultats de comparaison de travaux"]
+
+. Cliquez sur le nom de l'objet pour voir les résultats. Le récapitulatif des travaux de comparaison s'affiche avec le nombre d'enregistrements créés, mis à jour et supprimés dans l'objet entre les deux sauvegardes sélectionnées. Vous avez la possibilité de télécharger les détails de la tâche de comparaison.
++
+.. Pour télécharger les détails de la tâche de comparaison, cliquez sur image:download_compare_results.gif["icône de résultats de comparaison de téléchargement"].
+.. Décompressez le fichier pour voir les résultats.
+
+
+. Cliquez sur *RESTAURER*.
+. Sélectionnez *MIS À JOUR* pour restaurer tous les enregistrements mis à jour. Sélectionnez *SUPPRIMÉ* pour restaurer tous les enregistrements supprimés. Vous pouvez également sélectionner les deux si les options sont disponibles.
+. Cliquez sur *SUMBIT*.
++
+Le travail est restauré sans écrasement ni relation.
+
+

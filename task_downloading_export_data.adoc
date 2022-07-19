@@ -1,0 +1,116 @@
+---
+sidebar: sidebar 
+permalink: task_downloading_export_data.html 
+keywords: netapp, saas backup, salesforce, viewing, downloading, export, data 
+summary: 'Vous pouvez télécharger des pièces jointes, des résultats et des statistiques à l"aide de la fonction d"exportation vers les données.' 
+---
+= Téléchargement des données d'exportation
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Vous pouvez exporter des données au niveau de l'objet et de l'organisation. Pour chaque exportation, vous pouvez télécharger des pièces jointes, des résultats et des statistiques à partir d'une sauvegarde précédente.
+
+
+
+== Exportation au niveau de l'objet
+
+.Étapes
+. Dans le volet de navigation de gauche, cliquez sur *Services*.image:services.jpg[""]
+. Cliquez sur *instances de production* ou *instances de test*.image:production_instances.gif["L'image montre la zone instances de production"]
+image:sandbox_instances.gif["L'image montre la zone instances sandbox"]
+. Cliquez sur le nombre de *instances protégées*.image:protected_instances_screenshot.gif["L'image montre les instances protégées"]
+. Cliquez sur le nom de l'organisation.image:organization.jpg["L'image montre où cliquer sur le nom de l'organisation"]
+. Sélectionnez les objets à exporter et cliquez sur *Restaurer*.image:restore.jpg["L'image montre le bouton de restauration"]
+. Si nécessaire, sélectionnez *Restaurer relations* ou *Restaurer fichiers/pièces jointes* pour les inclure dans votre exportation.
++
+
+NOTE: Si vous sélectionnez *Restaurer relations*, le travail exporte l'objet sélectionné et tous ses objets de relation. Si vous ne sélectionnez pas *Restaurer relations*, le travail exporte uniquement les objets sélectionnés.
+
+. Cliquez sur *soumettre*.
+. Cliquez sur *travaux* dans le volet de navigation de gauche pour afficher votre travail de restauration.
+. Cliquez sur *Total des objets* ou *succès* pour afficher les détails du travail et les options de téléchargement.
++
+.. Pour les travaux d'exportation avec *Restaurer les fichiers/pièces jointes*, vous disposez de trois options de téléchargement :
++
+... Pour les résultats, cliquez sur image:export_data_download_link.gif["L'image montre le bouton du lien de téléchargement des données d'exportation"].
++
+.... Dans votre recherche, localisez le fichier .tar.gz téléchargé.
+.... Décompressez le fichier pour obtenir un fichier .tar.
+.... Extrayez le fichier .tar pour voir les résultats EXCEL.
+
+
+... Pour les pièces jointes, cliquez sur image:attachments_download_link.gif["L'image montre le lien de téléchargement des pièces jointes"].
++
+.... Dans votre recherche, localisez le fichier .tar.gz téléchargé.
+.... Décompressez le fichier pour obtenir un fichier .tar.
+.... Extrayez le fichier .tar pour voir les pièces jointes.
+
+
+... Pour un rapport statistique, cliquez sur image:download.gif["L'image montre le lien de téléchargement"].
+
+
+.. Pour les travaux d'exportation sans *Restaurer les fichiers/pièces jointes*, vous disposez de deux options de téléchargement :
++
+... Pour les résultats, cliquez sur image:export_data_download_link.gif["L'image montre le lien de téléchargement des données d'exportation"].
+... Pour un rapport statistique, cliquez sur image:download.gif["L'image montre le lien de téléchargement"].
+
+
+
+
+
+
+
+
+== Exportation au niveau de l'organisation
+
+.Étapes
+. Dans le volet de navigation de gauche, cliquez sur *Services*.image:services.jpg[""]
+. Cliquez sur *instances de production* ou *instances de test*.image:production_instances.gif["L'image montre la zone instances de production"]
+image:sandbox_instances.gif["L'image montre la zone instances sandbox"]
+. Cliquez sur le nombre de *instances protégées*.image:protected_instances_screenshot.gif["L'image montre les instances protégées"]
+. Sélectionnez *Tier*.image:tier_selection.gif["L'image affiche la liste déroulante des niveaux"]
+. Cliquez sur *Restaurer*, puis sur l'option *Exporter données*.image:restore_export_data.gif["L'image affiche la liste déroulante de restauration avec option d'exportation"]
+. Si nécessaire, cliquez sur *Restaurer les fichiers/pièces jointes* pour les inclure dans votre exportation.
+. Cliquez sur *soumettre*.
+. Cliquez sur *travaux* dans le volet de navigation de gauche pour afficher votre travail de restauration.
+. Cliquez sur *Total organisations* ou *succès* pour afficher les détails du travail et les options de téléchargement.
++
+.. Pour les travaux d'exportation avec *Restaurer les fichiers/pièces jointes*, vous disposez de trois options de téléchargement :
++
+... Pour les résultats, cliquez sur image:export_data_download_link.gif["L'image montre le bouton du lien de téléchargement des données d'exportation"].
++
+.... Dans votre recherche, localisez le fichier .tar.gz téléchargé.
+.... Décompressez le fichier pour obtenir un fichier .tar.
+.... Extrayez le fichier .tar pour voir les résultats EXCEL.
+
+
+... Pour les pièces jointes, cliquez sur image:attachments_download_link.gif["L'image montre le lien de téléchargement des pièces jointes"].
++
+.... Dans votre recherche, localisez le fichier .tar.gz téléchargé.
+.... Décompressez le fichier pour obtenir un fichier .tar.
+.... Extrayez le fichier .tar pour voir les pièces jointes.
+
+
+... Pour un rapport statistique, cliquez sur image:download.gif["L'image montre le lien de téléchargement"].
+
+
+.. Pour les travaux d'exportation sans *Restaurer les fichiers/pièces jointes*, vous disposez de deux options de téléchargement :
++
+... Pour les résultats, cliquez sur image:export_data_download_link.gif["L'image montre le lien de téléchargement des données d'exportation"].
+... Pour un rapport statistique, cliquez sur image:download.gif["L'image montre le lien de téléchargement"].
+
+
+
+
+

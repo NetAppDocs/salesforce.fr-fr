@@ -1,0 +1,151 @@
+---
+sidebar: sidebar 
+permalink: task_managing_restores.html 
+keywords: netapp, saas backup, salesforce, managing, data, metadata, restore, restores, restoring, recent, previous, backup, compare, comparison 
+summary: Vous pouvez utiliser SaaS Backup pour Salesforce pour restaurer les données que vous avez précédemment sauvegardées. 
+---
+= Restauration des données
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Vous pouvez utiliser SaaS Backup pour Salesforce pour restaurer les données et les métadonnées que vous aviez précédemment sauvegardées.
+
+
+
+== Restauration de la sauvegarde la plus récente
+
+.Étapes
+. Dans le volet de navigation de gauche, cliquez sur *Services*.image:services.jpg[""]
+. Cliquez sur *instances de production* ou *instances de test*.image:production_instances.gif[""]
+image:sandbox_instances.gif[""]
+. Cliquez sur le nombre de *instances protégées*.
+. Cliquez sur le nom de l'organisation.image:organization.jpg[""]Une liste d'objets s'affiche. Les objets récupérables sont affichés par défaut. Pour afficher les objets non récupérables, sélectionnez « inclure les objets non récupérables ». Les objets non récupérables sont indiqués par une icône grise. L'icône rouge représente des objets qui n'ont pas pu être sauvegardés dans la sauvegarde en cours, mais qui peuvent être restaurés à partir de sauvegardes précédentes.
+
+
+|===
+
+
+| Objet récupérable | image:recoverable_item.jpg[""] 
+
+
+| Objet non récupérable | image:nonrecoverable_item.jpg[""] 
+
+
+| Objet échec | image:failed_item.jpg[""] 
+|===
+. Cliquez sur l'objet contenant les enregistrements individuels que vous souhaitez restaurer, puis recherchez l'enregistrement spécifique.
+. Cliquez sur *Restaurer*.image:restore.jpg[""]
+. Sélectionnez les options de restauration.
++
+.. *Restaurer avec écrasement* est sélectionné par défaut. Cette option remplace la version existante de l'enregistrement que vous restaurez. Si vous souhaitez conserver la version actuelle de l'enregistrement et la version restaurée de l'enregistrement, désélectionnez cette option.
+.. * Restaurer la relation* restaure les enfants des enregistrements parents avec le parent jusqu'à cinq niveaux. Si vous ne sélectionnez pas pour restaurer la relation, seul l'enregistrement parent est restauré.
+.. *Exporter des données* vous permet d'exporter des données d'une sauvegarde à un moment précis. Vous pouvez exporter des données au niveau de l'objet ou au niveau de l'organisation. Pour plus d'informations sur la fonction d'exportation vers des données, reportez-vous à la section link:task_downloading_export_data.html["Téléchargement des données d'exportation"].
++
+
+NOTE: Les travaux d'exportation ne sont disponibles que sept jours après leur achèvement.
+
+
+
+. Cliquez sur *soumettre*.image:submit.jpg[""]
+
+
+
+
+== Restauration à partir d'une sauvegarde précédente
+
+.Étapes
+. Dans le volet de navigation de gauche, cliquez sur *Services*.image:services.jpg[""]
+. Cliquez sur *instances de production* ou *instances de test*.image:production_instances.jpg[""]
+image:sandbox_instances.jpg[""]
+. Cliquez sur le nombre de *instances protégées*.
+. Cliquez sur le nom de l'organisation.image:organization.jpg[""]
+. Cliquez sur *Afficher l'historique des sauvegardes*.
+. Sélectionnez cette option pour afficher les sauvegardes pour une plage de temps spécifique ou pour sélectionner une sauvegarde pour une date spécifique.
++
+.. Pour sélectionner des sauvegardes pour une plage de temps spécifique, dans le coin supérieur droit, cliquez sur le menu déroulant en regard de *Afficher les sauvegardes sélectionnées*, puis sélectionnez l'une des plages de jours prédéfinies.image:show_selected_backups.jpg[""]La liste des sauvegardes effectuées pendant la plage sélectionnée s'affiche.
+.. Pour sélectionner une sauvegarde pour une date spécifique, cliquez sur la date de la sauvegarde dans le calendrier, puis sélectionnez la sauvegarde de votre choix. Le nombre indiqué dans le cercle rouge indique le nombre de sauvegardes effectuées à cette date. Les cercles individuels verts indiquent les sauvegardes individuelles.
+
+
+. Cliquez sur l'objet contenant les enregistrements individuels que vous souhaitez restaurer, puis recherchez l'enregistrement spécifique.
+. Cliquez sur *Restaurer*.image:restore.jpg[""]
+. Sélectionnez les options de restauration.
++
+.. *Restaurer avec écrasement* est sélectionné par défaut. Cette option remplace la version existante de l'enregistrement que vous restaurez. Si vous souhaitez conserver la version actuelle de l'enregistrement et la version restaurée de l'enregistrement, désélectionnez cette option.
+.. * Restaurer la relation* restaure les enfants des enregistrements parents avec le parent jusqu'à cinq niveaux. Si vous ne sélectionnez pas pour restaurer la relation, seul l'enregistrement parent est restauré.
+.. *Exporter des données* vous permet d'exporter des données d'une sauvegarde à un moment précis. Vous pouvez exporter des données au niveau de l'objet ou au niveau de l'organisation. Pour plus d'informations sur la fonction d'exportation vers des données, reportez-vous à la section link:task_downloading_export_data.html["Téléchargement des données d'exportation"].
++
+
+NOTE: Les travaux d'exportation ne sont disponibles que sept jours après leur achèvement.
+
+
+
+. Cliquez sur *soumettre*. Un message s'affiche indiquant que les organisations sélectionnées sont placées dans la file d'attente des travaux.
+
+
+
+
+== Restauration des métadonnées
+
+Les métadonnées peuvent être restaurées au niveau de l'entreprise ou au niveau granulaire.
+
+
+
+=== Restauration des métadonnées au niveau de l'entreprise
+
+.Étapes
+. Accédez à *Services*.
+. Sélectionnez *instances de production* ou *instances de test*.
+. Cliquez sur le nombre d'instances *protégées*.
+. Cliquez sur le nom de l'organisation.
+. Cliquez sur *Restaurer*.
+. Sélectionnez une option de restauration.
++
+.. Pour exporter vos métadonnées, sélectionnez *Exporter métadonnées*. Un fichier zip est créé.
++
+
+NOTE: Les tâches d'exportation de métadonnées sont disponibles pendant 30 jours à compter de la fin de l'opération.
+
+.. Pour restaurer vos métadonnées, sélectionnez *Restaurer métadonnées*.
+
+
+. Cliquez sur *soumettre*.
+
+
+
+
+=== Restaurations de métadonnées granulaires
+
+.Étapes
+. Accédez à *Services*.
+. Sélectionnez *instances de production* ou *instances de test*.
+. Cliquez sur le nombre d'instances *protégées*.
+. Cliquez sur le nom de l'organisation.
+. Cliquez sur l'onglet *types et composants de métadonnées*. La liste des types de métadonnées s'affiche.
+. Sélectionnez les types de métadonnées à restaurer.
+. Cliquez sur *Restaurer*.
+. Sélectionnez une option de restauration.
++
+image:restore_options_export-restore_metadata.png["options d'exportation et de restauration des métadonnées"]
+
++
+.. Pour exporter vos métadonnées, sélectionnez *Exporter métadonnées*. Un fichier zip est créé.
++
+
+NOTE: Les tâches d'exportation de métadonnées sont disponibles pendant 30 jours à compter de la fin de l'opération.
+
+.. Pour restaurer vos métadonnées, sélectionnez *Restaurer métadonnées*.
+
+
+. Cliquez sur *soumettre*.
+

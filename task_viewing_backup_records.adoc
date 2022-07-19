@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: task_viewing_backup_records.html 
+keywords: netapp, saas backup, salesforce, viewing, backup, records, count, summary 
+summary: 'Dans SaaS Backup pour Salesforce, vous pouvez vérifier le nombre d"enregistrements de sauvegarde dans SaaS Backup pour Salesforce.' 
+---
+= Affichage des enregistrements de sauvegarde
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez vérifier le nombre d'enregistrements de sauvegarde dans SaaS Backup pour Salesforce.
+
+La première sauvegarde complète fournit le nombre total d'enregistrements de sauvegarde au niveau de l'organisation. Après cette première sauvegarde, vous pouvez afficher le nombre total d'enregistrements créés, mis à jour et supprimés dans le *Résumé de sauvegarde*.
+
+.Étapes
+. Dans le tableau de bord, cliquez sur le nombre d'instances protégées (production ou sandbox).
+. Cliquez sur *View* sous *Backup Summary*.
++
+image:click_view_backup_summary.png["afficher le résumé de la sauvegarde"]
+
+. Afficher le nombre d'enregistrements créés et supprimés et le nombre d'enregistrements de toutes les modifications apportées au tableau.
++
+image:record_count.png["Nombre d'enregistrements de sauvegarde"]
+
++
+** *Nom d'objet* - inclut tous les objets de l'organisation.
+** *Créé* - tous les enregistrements créés et mis à jour.
+** *Supprimé* - tous les enregistrements supprimés.
+** *Nombre d'enregistrements* - le nombre total de modifications de sauvegarde pour un objet.
+
+
+

@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: concept_get_help_find_info.html 
+keywords: where to find more information, help, support 
+summary: 'Pour obtenir de l"aide et trouver plus d"informations, consultez les articles du forum de la communauté et de la base de connaissances NetApp SaaS Backup pour Salesforce.' 
+---
+= Où obtenir de l'aide et trouver plus d'informations
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+Pour obtenir de l'aide et trouver plus d'informations, consultez les articles du forum de la communauté et de la base de connaissances NetApp SaaS Backup pour Salesforce.
+
+Vous pouvez accéder à ces ressources dans SaaS Backup via le lien *support* du menu de navigation.
+
+Vous pouvez également envoyer un e-mail à l'équipe de support SaaS Backup à l'adresse saasbackupsupport@netapp.com.

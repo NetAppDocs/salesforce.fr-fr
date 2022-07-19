@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: scheduling_first_backup.html 
+keywords: netapp, saas backup, salesforce, moving, organization, different, backup, tier 
+summary: Une fois les données de votre sandbox ou de votre instance de production protégées, vous pouvez choisir à tout moment de les transférer vers un niveau de sauvegarde différent. 
+---
+= Planification d'une sauvegarde ou modification de la fréquence de sauvegarde
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Si vous ajoutez une instance Sandbox dans SaaS Backup pour Salesforce, par défaut, toutes les données de Sandbox sont non protégées jusqu'à ce que vous les déplaiez manuellement vers un niveau de sauvegarde protégé. Une fois les données de votre sandbox ou de votre instance de production protégées, vous pouvez choisir à tout moment de les transférer vers un niveau de sauvegarde différent.
+
+.Étapes
+. Dans le volet de navigation de gauche, cliquez sur *Services*.
++
+image:services.jpg[""]
+
+. Si vous souhaitez déplacer une organisation dans votre instance de production, cliquez sur *instances de production*.
++
+image:production_instances.gif[""]Si vous souhaitez déplacer une organisation dans votre instance Sandbox, cliquez sur *instances Sandbox*.
+
++
+image:sandbox_instances.gif[""]
+
+. Sélectionnez la catégorie d'instance correcte pour l'organisation à déplacer.
++
+** Cliquez sur le nombre ci-dessus *INSTANCES PROTÉGÉES*, si l'organisation que vous souhaitez déplacer est actuellement protégée par une stratégie de sauvegarde.
+** Cliquez sur le nombre ci-dessus *INSTANCES EN ATTENTE*, si l'état de sauvegarde de l'organisation que vous souhaitez déplacer est en attente,
+** Cliquez sur le nombre ci-dessus *INSTANCES NON PROTÉGÉES*, si l'organisation que vous souhaitez déplacer est actuellement protégée par une stratégie de sauvegarde.
+
+
+. Sélectionnez le nouveau niveau. Seules les sauvegardes de niveau 2 et 3 sont disponibles pour les instances sandbox. Les instances sandbox ne peuvent pas être sauvegardées dans le cadre de la stratégie de niveau 1. Les instances de production peuvent se trouver dans la stratégie de niveau 1 ou non protégée. Les instances de production ne peuvent pas être sauvegardées selon les règles de niveau 2 ou 3. L'entreprise passe au nouveau niveau de sauvegarde.
+

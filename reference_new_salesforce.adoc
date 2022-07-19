@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: reference_new_salesforce.html 
+keywords: 'what"s new, features, new, release notes, enhancements' 
+summary: SaaS Backup pour Salesforce présente régulièrement une nouvelle version qui propose de nouvelles fonctionnalités, des améliorations et des correctifs. 
+---
+= Nouvelles fonctionnalités et mises à jour
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+NetApp SaaS Backup pour Salesforce inclut de nouvelles fonctionnalités et des mises à jour suivantes.
+
+
+
+== Décembre 2020
+
+* SaaS Backup pour Salesforce restaure désormais les métadonnées. Cette amélioration inclut des restaurations au niveau de l'entreprise et des restaurations granulaires d'éléments uniques ou multiples pour vos métadonnées.
++
+Restauration des métadonnées au niveau de l'entreprise
+
++
+image:org_level_restore_metadata_option_cropped.png["Option de restauration des métadonnées au niveau de l'entreprise écourtée"]
+
++
+Restauration granulaire des métadonnées
+
++
+image:restore_options_export-restore_metadata.png["options d'exportation et de restauration des métadonnées"]
+
++
+link:task_managing_restores.html["Restauration des données"]
+
+* Le *Résumé de la sauvegarde* est une amélioration de la fonctionnalité de SaaS Backup pour Salesforce qui vous donne le nombre total de tous vos enregistrements créés, mis à jour et supprimés. Il vous permet de vérifier que le nombre d'enregistrements de sauvegarde correspond à celui de votre compte Salesforce.
++
+link:task_viewing_backup_records.html["Affichage des enregistrements de sauvegarde"]
+
+
+
+
+
+== Octobre 2020
+
+* SaaS Backup pour Salesforce sauvegarde désormais les métadonnées. Cette amélioration inclut les sauvegardes, les restaurations au niveau de l'objet et de l'organisation et les purges des métadonnées que vous créez. L'interface utilisateur dispose également d'un nouvel onglet *types de métadonnées et composants* où vous pouvez voir vos sauvegardes de métadonnées. Ces pages fournissent des informations supplémentaires sur cette nouvelle fonction :
++
+link:task_enable_disable_metadata_backups.html["Activation et désactivation des métadonnées"]
+link:task_managing_restores.html["Restauration des données"]
+
+* À partir du 2020 octobre, vous pouvez effacer vos données. Les métadonnées sont automatiquement supprimées au bout de 90 jours.
++
+link:task_purging_data_&_metadata.html["Purge des données et des métadonnées"]
+
+
+
+
+
+== Février 2020
+
+Vous pouvez maintenant exporter des données au niveau de l'objet et de l'organisation. Pour chaque exportation, vous pouvez télécharger des pièces jointes, des résultats et des statistiques à partir d'une sauvegarde précédente.link:task_downloading_export_data.html["Téléchargement des données d'exportation"]

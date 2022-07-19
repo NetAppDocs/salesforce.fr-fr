@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: task_reauthenticating.html 
+keywords: netapp, saas backup, reauthenticating, reauthentication, tokens, refresh, expired, access 
+summary: Vous pouvez annuler une sauvegarde ou une restauration immédiate. Vous ne pouvez pas annuler une sauvegarde planifiée. 
+---
+= Nouvelle authentification
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Salesforce permet l'utilisation d'un maximum de 5 jetons avant de vous authentifier de nouveau vos identifiants. Si vous tentez de lancer une sauvegarde ou une restauration et que tous vos jetons ont été utilisés, vous recevez le message d'erreur suivant : “jeton d'accès/d'actualisation expiré”. Si vous recevez ce message, vous devez procéder à une nouvelle authentification avant de continuer.
+
+
+toc::[]
+.Étapes
+. Dans le coin supérieur gauche du tableau de bord, cliquez sur image:configure_icon.jpg["Icône Paramètres"].
+. Sous *PARAMÈTRES DE SERVICE*, sélectionnez *Salesforce*.
+. CLIQUEZ SUR *ACCORDER DES AUTORISATIONS D'ACCÈS*.
++
+image:grant_access_permissions.jpg["Icône accorder les autorisations d'accès"]
+
+. Cliquez sur l'onglet *PRODUCTION* ou *SANDBOX* pour sélectionner l'instance à authentifier à nouveau.
+. Cliquez sur image:re_authenticate.jpg["Icône de nouvelle authentification"].
++
+Vous êtes redirigé vers *Salesforce* pour saisir vos informations d'identification. Après une nouvelle authentification, vous pouvez lancer votre tâche de sauvegarde ou de restauration.
+
+

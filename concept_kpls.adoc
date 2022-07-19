@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: concept_kpls.html 
+keywords: netapp, saas backup, salesforce, known, problems, limitations, release, notes 
+summary: Vous devez connaître certaines restrictions et problèmes connus de SaaS Backup. 
+---
+= Problèmes et limites connus
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Voici une liste des problèmes et restrictions connus de SaaS Backup pour Salesforce.
+
+
+
+== Enregistrements manquants dans la sauvegarde de certains objets (défaut n° 1169)
+
+Après une sauvegarde complète ou incrémentielle d'une organisation, le nombre total d'enregistrements découverts peut être légèrement en désaccord par rapport au nombre total d'enregistrements téléchargés. Cela se produit lorsque des champs spécifiques sont ajoutés à la requête et, par conséquent, l'API Salesforce ne renvoie pas tous les enregistrements.
+
+
+
+== La restauration des enregistrements sauvegardés avant la modification du schéma n'est pas prise en charge (défaut n° 1170)
+
+SaaS Backup ne prend pas en charge la restauration des enregistrements sauvegardés avant une modification de schéma. Si cette opération est effectuée, la restauration échoue et le message suivant s'affiche : *Echec de la restauration en raison des modifications du schéma*.
+
+
+
+== Objets exclus des sauvegardes
+
+SaaS Backup pour Salesforce ne sauvegarde pas les objets suivants :
+
+* Objets qui ne peuvent pas être interrogés à l'aide des API Salesforce
+* Objets qui ne prennent pas en charge les requêtes génériques
+* Les objets d'historique utilisés par Salesforce pour suivre l'historique des modifications apportées au niveau du champ aux enregistrements des objets.
+
+
+
+
+== Fonctions non prises en charge dans l'aperçu privé
+
+Les fonctionnalités suivantes ne sont pas prises en charge dans la version de présentation privée de SaaS Backup pour Salesforce.
+
+* Chatter Salesforce
+* Les types de relations suivants
++
+** Relations N:1 à N:N.
+** Auto-relations
+** Relations cycliques
+
+
+

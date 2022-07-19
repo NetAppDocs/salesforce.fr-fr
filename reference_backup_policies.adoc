@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: reference_backup_policies.html 
+keywords: netapp, saas backup, salesforce, managing, backups, backup, policies, tier, tiers 
+summary: Vous pouvez utiliser SaaS Backup pour Salesforce pour sauvegarder vos données. 
+---
+= Politiques de sauvegarde
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+SaaS Backup pour Salesforce dispose de trois tiers prédéfinis de règles de sauvegarde. Ces tiers de règles varient en fonction de la fréquence des sauvegardes et de la période de conservation des données. Les instances de production ne peuvent être protégées que par la règle de niveau 1. Les instances sandbox peuvent être protégées par les règles de niveaux 2 et 3.
+
+Les stratégies de sauvegarde avec un statut *actif* sont des stratégies auxquelles des éléments ont été affectés pour la sauvegarde. Les stratégies de sauvegarde dont le statut est *Inactif* ne disposent pas d'éléments affectés à la sauvegarde.
+
+|===
+| Politique de sauvegarde | Fréquence des sauvegardes | Période de conservation des données par défaut | Disponible pour la protection 
+
+
+| Niveau 1 | Toutes les 12 heures | 3 ans | Instance de production 
+
+
+| Niveau 2 | Toutes les 18 heures | 2 ans | Instance sandbox 
+
+
+| Niveau 3 | Toutes les 24 heures | 2 ans | Instance sandbox 
+
+
+| Non protégé | Non sauvegardé | Non sauvegardé | Instances de production et de test 
+|===

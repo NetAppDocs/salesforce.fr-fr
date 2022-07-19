@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: task_viewing_activity_log.html 
+keywords: netapp, saas backup, salesforce, viewing, activity, log 
+summary: Vous pouvez afficher la liste de toutes les activités réalisées au sein de SaaS Backup pour Salesforce. 
+---
+= Affichage du journal des activités
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Vous pouvez afficher la liste de toutes les activités réalisées au sein de SaaS Backup pour Salesforce.
+
+.Étapes
+. Dans le volet de navigation gauche, cliquez sur *Reporting*.image:reporting.jpg[""]
+. Cliquez sur *Journal d'activités*.
+. Pour filtrer les résultats, cliquez sur *Filter*.image:filter.jpg[""]
+. Sélectionnez le filtre à utiliser pour affiner les résultats du reporting. Vous pouvez filtrer par service ou événement.image:activity_log_filter.jpg[""]
+. Cliquez dans la zone *Rechercher* et sélectionnez le service ou l'événement spécifique pour lequel vous souhaitez voir les résultats. Ajoutez des filtres supplémentaires si nécessaire.
+. Cliquez sur *appliquer le filtre*.
+

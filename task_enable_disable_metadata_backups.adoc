@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: task_enable_disable_metadata_backups.html 
+keywords: netapp, saas backup, salesforce, enable, enabling, disable, disabling, backup, backups, metadata, metadata backups 
+summary: Vous pouvez activer ou désactiver les sauvegardes de métadonnées pour Salesforce. 
+---
+= Activation et désactivation des sauvegardes de métadonnées
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Vous pouvez activer ou désactiver les sauvegardes de métadonnées pour Salesforce.
+
+
+
+== Possibilité de sauvegarder les métadonnées
+
+L'activation de la sauvegarde de métadonnées permet d'effectuer des sauvegardes de métadonnées pour toutes les organisations au sein d'un compte de locataire.
+
+.Étapes
+. Cliquez sur image:icon_gear.gif["icône de vitesse"] Et sélectionnez *Salesforce* sous *Paramètres des services*.
++
+image:select_salesforce_settings.gif["paramètres salesforce"]
+
+. Cliquez sur *Activer la sauvegarde de métadonnées* pour activer la fonction. Une fois activées au niveau du locataire, les métadonnées de toutes les organisations seront sauvegardées.
+
+
+
+
+== Désactivation des sauvegardes de métadonnées
+
+Vous pouvez désactiver les sauvegardes de métadonnées au niveau de l'entreprise. Une fois les sauvegardes de métadonnées activées pour toutes les entreprises, vous pouvez ainsi contrôler quelles entreprises ne possèdent pas de sauvegarde de métadonnées.
+
+.Étapes
+. Pour désactiver les sauvegardes de métadonnées, accédez à *Services*.
+. Sélectionnez *instances de production* ou *instances de test*.
+. Sélectionnez le nombre d'instances *protégées*.
+. Sélectionnez l'organisation pour laquelle vous souhaitez désactiver les sauvegardes de métadonnées.
+. Cliquez sur *sauvegarde de métadonnées* pour désactiver la fonction.
++
+image:disable_metadata_backup.gif["désactiver la sauvegarde des métadonnées"]
+
+
